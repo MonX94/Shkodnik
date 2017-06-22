@@ -1,0 +1,223 @@
+@font-face {
+	font-family: Futura;
+	src: url('./../../fonts/futura/futurademic-webfont.woff');
+}
+@font-face {
+	font-family: Social;
+	src: url('./../../fonts/socf/socf.woff');
+}
+.heading {
+	font-size: 28pt;
+	text-align: center;
+	font-family: Futura;
+}
+#overlay {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	z-index: 999999;
+	align-items: center;
+	justify-content: center;
+	display: none;
+}
+.navbar_item_father {
+	padding: 0;
+}
+#popup {
+	opacity: 1;
+	width: 600px;
+	z-index: 99999;
+}
+.popup_undercover {
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+}
+.popup_title {
+	font-family: sans-serif;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #F9BBBB;
+}
+#popup_center {
+	height: calc(100% - 100px)
+}
+.popup_buttons {
+	font-family: sans-serif;
+	height: 50px;
+	display: flex;
+	background-color: #F9BBBB;
+}
+.popup_button {
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+	flex-basis: 0;
+}
+.popup_button:hover {
+	background-color: #FFCCCC;
+}
+#footer {
+	background-color: black;
+	width: 100%;
+	position: relative;
+	z-index: 9999;
+	display: flex;
+	flex-wrap: wrap;
+}
+#footer_logo_container {
+	width: 20%;
+}
+#social_button_container {
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+}
+#social-title {
+	width: 100%;
+	color: white;
+	font-family: sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#social-icons {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	font-family: social;
+	font-size: 36pt;
+}
+.social_icon {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.empty_cart {
+	padding-bottom: calc(150px - 28pt);
+	margin-top: calc(150px - 28pt);
+	text-align: center;
+	font-family: Futura;
+	font-size: 28pt;
+}
+a {
+	text-decoration: none !important;
+}
+.cart_good {
+	height: 250px;
+	margin: 2px;
+}
+.cart_good_image {
+	height: 60%;
+}
+.cart_good_not_image {
+	height: 100%;
+	width: auto;
+	overflow: hidden;
+	display: flex;
+}
+.cart_good_title {
+	margin-left: 5px;
+	font-size: 18pt;
+	font-family: Futura
+}
+.cart_good_image_block {
+	float: left;
+	height: 100%;
+}
+.cart_good_desc {
+	margin-top: 5px;
+	margin-left: 5px;
+	height: 25%;
+}
+.cart_good_id {
+	font-size: 14pt;
+	margin-left: 5px;
+	text-align: center;
+	font-family: Futura;
+}
+.cart_good_price {
+	font-family: Futura;
+	font-size: 20pt;
+	margin-left: 5px;
+}
+.cart_good_block_1 {
+	width: 40%;
+	margin-right: 10%;
+}
+.cart_good_block_2 {
+	width: 50%;
+	display: flex;
+}
+.cart_good_amount {
+	width: 50%;
+	height: 70%;
+}
+.cart_good_count {
+	width: 50%;
+}
+.cart_good_amount_title {
+	font-size: 18pt;
+	font-family: Futura;
+}
+.cart_good_arrow {
+	cursor: pointer;
+	height: 33%;
+	width: 65%;
+	margin-left: 17.5%;
+}
+.cart_good_count_text {
+	text-align: center;
+	height: 34%;
+	width: 100%;
+	font-family: sans-serif;
+	font-size: 24pt;
+}
+.cart_good_total_title {
+	font-family: Futura;
+	font-size: 18pt;
+}
+.cart_good_total {
+	margin-top: 55%;
+}
+.cart_summary {
+	text-align: right;
+	margin-right: 20px;
+	font-family: Futura;
+	font-size: 18pt;
+}
+.twitter {
+	color: #1DA1F2 !important;
+}
+.uzhas {
+	color: #ED812B !important;
+}
+.facebook {
+	color: #3B5998 !important;
+}
+.vk {
+	color: #45668E !important;
+}
+#copyright {
+	width: 100%;
+	color: white;
+	text-align: center;
+	font-family: Futura;
+}
+#footer_logo {
+	width: 100%;
+	height: 100%;
+}
+#cart_success {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	font-size: 16pt;
+	font-family: Futura;
+}

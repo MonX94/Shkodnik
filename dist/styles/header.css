@@ -1,0 +1,128 @@
+body {
+	margin: 0;
+	overflow-y: scroll;
+}
+header {
+	background-color: #A83328; /* Заголовок */
+	text-align: center;
+}
+#header_logo { /* Фото логотипа */
+	padding: 0.5%;
+	margin: 7px;
+	width: 8%;
+	min-width: 130px;
+}
+	#header_logo:hover {
+		background-color: #C42121;
+	}
+.navbar {
+	width: 100%;
+	height: 5vh;
+	background-color: #A83328;
+/*	border-top: 1px solid #B71F1F; */
+}
+.navbar_item_father {
+	width: 70%;
+	height: 100%;
+	margin: auto;
+	list-style: none;
+}
+.navbar_item {
+	float: left;
+	font-family: RobotoRegular;
+	width: 20%;
+	height: 100%;
+	display: block;
+	position: relative;
+	font-size: 16px;
+}
+	.navbar_item:hover {
+		background-color: #C42121;
+	}
+.navbar_item a {
+	color: white;
+}
+.navbar_item a:hover {
+	color: #E0EAFF;
+}
+.navbar_item a:visited {
+	color: white;
+}
+.navbar_item > ul {
+	list-style: none;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	left: -9999px;
+	padding: 0;
+	opacity: 0;
+	color: white;
+	transition: 0.25s linear opacity;
+}
+.boys_dropdown {
+	background-color: #4773D8;
+}
+.boys_dropdown:hover {
+	background-color: #1898E2;
+}
+.girls_dropdown {
+	background-color: #E864EA;
+}
+.girls_dropdown:hover {
+	background-color: #F269F4;
+}
+.navbar_item > ul > li {
+	display: flex;
+	height: 50%;
+	padding-top: 0.5px;
+	float: none;
+	justify-content: center;
+	align-items: center;
+}
+.navbar_item > ul > li:hover {
+	/* Reserved */
+}
+.navbar_item:hover > ul {
+	left: 0;
+	opacity: 1;
+}
+.navbar_item > ul:hover {
+	left: 0;
+	opacity: 1;
+}
+.navbar_link {
+	display: block;
+	color: white;
+	text-decoration: none;
+}
+	.navbar_link:visited {
+		color: white;
+	}
+	.navbar_link:hover {
+		color: #E0EAFF;
+	}
+.navbar_link_wrap {
+	color:white;
+	display: inline-flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+.navbar_link_wrap ~ ul {
+	margin-left: 0;
+	height: 200%;
+}
+@media screen and (max-width: 700px)  { /* Для телефонов */
+	.navbar_item {
+		display: block;
+		padding-top: 0%;
+		height: 16.6%;
+		width: 100%;
+		text-align: center;
+	}
+	.navbar {
+		height: 30vh;
+	}
+}

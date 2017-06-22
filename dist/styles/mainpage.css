@@ -1,0 +1,153 @@
+aside {
+	background-color: #EDEDED;
+	width: 33%;
+	height: 600vh;
+}
+a {
+	color: #0000FF;
+}
+a:visited {
+	color: #0000FF;
+}
+#wrapper {
+	overflow: hidden;
+}
+.nav_link {
+	font-family: RobotoRegular;
+	text-decoration: none;
+	border-bottom: 1px solid #494949;
+	font-size: 2vw;
+	color: #494949;
+}
+	.nav_link:visited {
+		color: #494949;
+	}
+	.nav_link:hover {
+		color: #727272;
+		border-bottom: 1px solid #727272;
+	}
+.heading {
+	color: #212121;
+}
+.nav_link_container {
+	width: 100%;
+	margin-top: 3%;
+	text-align: center;
+}
+nav {
+	position: fixed;
+	width: 33%;
+	height: 100%;
+}
+article {
+	width: 67%;
+}
+#train {
+	position: relative;
+	cursor: pointer;
+	width: 180px;
+	left: 0px;
+	height: 106px;
+	transition: left 16s linear;
+}
+p {
+	font-family: RobotoRegular;
+	font-size: 14pt;
+	margin: 2% 3%;
+	color: #212121;
+}
+#MainPageWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+}
+#goto_top_arrow {
+	z-index: 9999;
+	position: fixed;
+	width: 4%;
+	cursor: pointer;
+	right: 0;
+	bottom: 15px;
+}
+.container{
+	margin: 10% auto;
+	width: 80%;
+	height: 30%;
+	padding: 0.25%;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	background: black;
+}
+.image-slider-wrapper{
+	overflow: hidden;
+	height: 100%;
+}
+.carouselImage {
+	width: 100%;
+	height: 100%;
+}
+.left-arrow-container {
+	position: absolute;
+	width: 25%;
+	height: 28%;
+	display: flex;
+}
+.right-arrow-container {
+	position: absolute;
+	width: 25%;
+	height: 28%;
+	display: flex;
+	left: 63%;
+}
+article p {
+	z-index: 1;
+}
+.line_of_list {
+	margin-left: 15px;
+}
+@media screen and (max-width: 700px) {
+	.container {
+		height: 200%;
+	}
+	#goto_top_arrow {
+		display: none;
+	}
+	#MainPageWrapper {
+	}
+	article {
+		width: 100%;
+	}
+	aside {
+		padding-top: 3%;
+		padding-bottom: 10%;
+		width: 100%;
+		height: 70%;
+	}
+	#welcome {
+		padding-top: 35%;
+		font-size: 32pt;
+	}
+	nav {
+		height: 12vh;
+		width: 100%;
+		position: static;
+	}
+	.nav_link {
+		font-size: 14px;
+	}
+	.nav_link_container {
+		text-align: center;
+		height: 20%;
+	}
+	p {
+		opacity: 1;
+	}
+	.heading {
+		opacity: 1;
+	}
+	#train {
+		transition: left 30s linear;
+		top: 200px;
+	}
+}
